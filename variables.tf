@@ -45,3 +45,15 @@ variable "ssh_source_address_prefix" {
   type        = string
   default     = "*"
 }
+
+variable "http_source_address_prefix" {
+  description = "Allowed source IP/CIDR for HTTP."
+  type        = string
+  default     = "*"
+}
+
+variable "https_source_address_prefix" {
+  description = "Allowed source IP/CIDR for HTTPS."
+  type        = string
+  default     = "*"
+}
